@@ -17,52 +17,59 @@
     </header>
 
     <!-- Gallery Section -->
-    <section id="gallery-page">
-        <div class="container">
-            <h2>Our Memories</h2>
-            <p>Browse through the moments that matter.</p>
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* Space between images */
+   
+    
+        <section id="gallery-page">
+            <div class="container">
+                <h2>Our Memories</h2>
+                <p>Browse through the moments that matter.</p>
 
-            <div class="gallery-grid">
-                <!-- Image Thumbnails -->
-                <img src="images/IMG-20241213-WA0018.jpg" alt="Event 1" class="gallery-item">
-                <img src="images/IMG-20241213-WA0019.jpg" alt="Event 2" class="gallery-item">
-                <img src="images/IMG-20241213-WA0020.jpg" alt="Event 3" class="gallery-item">
-                <img src="images/IMG-20241213-WA0021.jpg" alt="Event 4" class="gallery-item">
-                <img src="images/IMG-20241213-WA0022.jpg" alt="Event 5" class="gallery-item">
-                <img src="images/IMG-20241213-WA0023.jpg" alt="Event 6" class="gallery-item">
-                <img src="images/IMG-20241213-WA0024.jpg" alt="Event 7" class="gallery-item">
-                <img src="images/IMG-20241213-WA0025.jpg" alt="Event 8" class="gallery-item">
-                <img src="images/IMG-20241213-WA0026.jpg" alt="Event 9" class="gallery-item">
-                <img src="images/IMG-20241213-WA0027.jpg" alt="Event 10" class="gallery-item">
-                <img src="images/IMG-20241213-WA0028.jpg" alt="Event 11" class="gallery-item">
-                <img src="images/IMG-20241213-WA0029.jpg" alt="Event 12" class="gallery-item">
-                <img src="images/IMG-20241213-WA0030.jpg" alt="Event 13" class="gallery-item">
-                <img src="images/IMG-20241213-WA0031.jpg" alt="Event 14" class="gallery-item">
-                <img src="images/IMG-20241213-WA0032.jpg" alt="Event 15" class="gallery-item">
-                <img src="images/IMG-20241213-WA0033.jpg" alt="Event 16" class="gallery-item">
+                <div class="gallery-grid">
+                    <!-- Image Thumbnails -->
+                    <img src="images/IMG-20241213-WA0018.jpg" alt="Event 1" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0019.jpg" alt="Event 2" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0020.jpg" alt="Event 3" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0021.jpg" alt="Event 4" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0022.jpg" alt="Event 5" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0023.jpg" alt="Event 6" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0024.jpg" alt="Event 7" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0025.jpg" alt="Event 8" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0026.jpg" alt="Event 9" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0027.jpg" alt="Event 10" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0028.jpg" alt="Event 11" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0029.jpg" alt="Event 12" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0030.jpg" alt="Event 13" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0031.jpg" alt="Event 14" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0032.jpg" alt="Event 15" class="gallery-item">
+                    <img src="images/IMG-20241213-WA0033.jpg" alt="Event 16" class="gallery-item">
 
-                Video Thumbnails
-                <!-- <video class="gallery-item" controls>
-                    <source src="videos/event1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <video class="gallery-item" controls>
-                    <source src="videos/event2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+                    Video Thumbnails
+                    <!-- <video class="gallery-item" controls>
+                        <source src="videos/event1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <video class="gallery-item" controls>
+                        <source src="videos/event2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video> -->
+                </div>
             </div>
-        </div>
 
-        <!-- Modal for Enlarging Images/Videos -->
-        <!-- <div id="gallery-modal" class="modal">
-            <span class="close">&times;</span>
-            <div class="modal-content">
-                <img id="modal-img" src="" alt="">
-                <video id="modal-video" controls></video>
-            </div>
-        </div> -->
-    </section>
-
+            <!-- Modal for Enlarging Images/Videos -->
+            <!-- <div id="gallery-modal" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <img id="modal-img" src="" alt="">
+                    <video id="modal-video" controls></video>
+                </div>
+            </div> -->
+        </section>
+    }
     <script>
         // JavaScript for Gallery Modal
         const modal = document.getElementById("gallery-modal");

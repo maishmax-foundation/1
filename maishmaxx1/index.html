@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maishmaxx Foundation Feeding Programme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="banner">
+            <h1>Maishmaxx Foundation Feeding Programme</h1>
+            <p>Spreading joy and care to the vulnerable</p>
+            <a href="#get-involved" class="cta-btn">Get Involved</a>
+        </div>
+    </header>
+    <section>
+    <img src="images/poster 2.jpg" alt="Event 1" class="gallery-item">
+    <img src="images/poster .jpg" alt="Event 1" class="gallery-item">
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The Maishmaxx Foundation is committed to supporting orphans and the elderly, ensuring everyone feels loved and cared for.</p>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p>Take a look at some highlights from our previous visits and activities!</p>
+            <a href="gallery.html" class="cta-btn">View Our Gallery</a>
+        </div>
+    </section>
+
+    <!-- Programme Details Section -->
+    <section id="programme-details">
+        <div class="container">
+            <h2>Programme Details</h2>
+            <p><strong>Date:</strong> December 28th, 2024</p>
+            <p><strong>Venue:</strong> Karatina Jambo Area</p>
+            <ul>
+                <li>Festive meals with a welcoming atmosphere.</li>
+                <li>Storytelling, music, and games.</li>
+                <li>Health check-ups for the elderly.</li>
+                <li>Care packages distribution.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="get-involved">
+        <div class="container">
+            <h2>Get Involved</h2>
+            <p>Your support can transform lives! Join us as a volunteer, donor, or partner.</p>
+            <div class="buttons">
+                <a href="#volunteer" class="cta-btn">Volunteer</a>
+                <a href="#donate" class="cta-btn">Donate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Maishmaxx Foundation. All Rights Reserved.</p>
+        <p>Follow us on <a href="https://www.facebook.com/ernest.maina.9">Facebook</a> | <a href="https://www.youtube.com/@MaishmaxxProduction50">Youtube</a> 
+    </footer>
+
+    <script>
+        // JavaScript for Gallery Modal
+        const modal = document.getElementById("gallery-modal");
+        const modalImg = document.getElementById("modal-img");
+        const modalVideo = document.getElementById("modal-video");
+        const closeModal = document.querySelector(".modal .close");
+
+        const galleryItems = document.querySelectorAll(".gallery-item");
+
+        galleryItems.forEach(item => {
+            item.addEventListener("click", () => {
+                modal.style.display = "flex";
+
+                if (item.tagName === "IMG") {
+                    modalImg.src = item.src;
+                    modalImg.style.display = "block";
+                    modalVideo.style.display = "none";
+                } else if (item.tagName === "VIDEO") {
+                    modalVideo.src = item.querySelector("source").src;
+                    modalVideo.style.display = "block";
+                    modalImg.style.display = "none";
+                }
+            });
+        });
+
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+            modalImg.src = "";
+            modalVideo.src = "";
+        });
+
+        modal.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                modalImg.src = "";
+                modalVideo.src = "";
+            }
+        });
+    </script>
+</body>
+</html>

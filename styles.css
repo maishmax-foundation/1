@@ -248,3 +248,46 @@ footer a:hover {
         margin: 5px auto; /* Center images and reduce spacing */
     }
 }
+
+/* Social Icons Styles */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 40px; /* Icon width */
+    height: 40px; /* Icon height */
+    border-radius: 50%; /* Optional: circular icons */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Intensify shadow on hover */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000; /* Adjust the color as needed */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Adjust the hover color as needed */
+}

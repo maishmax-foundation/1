@@ -6,25 +6,48 @@
     <title>Maishmaxx Foundation Feeding Programme</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .countdown {
-            text-align: center;
-            font-family: 'Arial', sans-serif;
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .banner {
+            background-color: #FF6F00;
             padding: 20px;
-            margin-top: 20px;
-            border: 2px solid #ddd;
-            border-radius: 5px;
-            color: #333;
+            color: white;
         }
-        .countdown h2 {
-            color: #FF6F00; /* Orange */
-            margin-bottom: 10px;
+         .countdown-card {
+            background-color: #ffbb00;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            transition: transform 0.3s ease-in-out;
         }
-        .countdown span {
-            display: inline-block;
-            margin: 0 10px;
+        .countdown-card:hover {
+            transform: scale(1.05);
+        }
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .time-box {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 60px;
+        }
+        .time-box span {
+            display: block;
             font-size: 1.5rem;
             font-weight: bold;
+            color: #333;
         }
     </style>
 </head>
@@ -50,15 +73,29 @@
     </header>
 
     <!-- Countdown Timer Section -->
-    <div class="countdown">
-        <h2>Countdown to Easter 2025 Event</h2>
-        <div>
-            <span id="days">0</span> Days
-            <span id="hours">0</span> Hours
-            <span id="minutes">0</span> Minutes
-            <span id="seconds">0</span> Seconds
+    <section>
+        <div class="countdown-card">
+            <h2>Countdown to Easter 2025 Event</h2>
+            <div class="countdown-timer">
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <div>Days</div>
+                </div>
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <div>Hours</div>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <div>Minutes</div>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <div>Seconds</div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!-- About Section -->
     <section id="about">

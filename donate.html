@@ -3,81 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donation Page</title>
+    <title>Maishmaxx Foundation Feeding Programme</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            background-color: #ffffff; /* White background */
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-        }
-
-        #message-container {
             text-align: center;
-            margin-top: 20px;
+            color: #333; /* Dark text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-
-        #message-container img {
-            max-width: 300px;
-            height: auto;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        #message-container p {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333333;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        #donation-container {
-            margin-top: 30px;
+        /* Header Styles */
+        header {
+            background-color: #ff6600; /* Orange background */
             padding: 20px;
-            background-color: #e6f7ff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            width: 100%;
+            text-align: center;
+            color: white; /* White text */
         }
-
-        #donation-container h2 {
-            font-size: 28px;
-            color: #005bb5;
-        }
-
-        #donation-container p {
-            font-size: 18px;
-            color: #333333;
-            margin: 15px 0;
-        }
-
-        #donation-container a {
-            color: #0078d7;
+        nav a {
+            color: white; /* White text */
+            margin: 0 15px;
+            text-decoration: none;
             font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Thank You Section Styles */
+        #thank-you {
+            background-color: #ffffff; /* White background */
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+        }
+        #thank-you h2 {
+            color: #ff6600; /* Orange text */
+        }
+        #thank-you p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        #thank-you img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 2px solid #ff6600; /* Orange border */
+            border-radius: 10px;
+        }
+        #paybill-info {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #333;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #343a40; /* Dark gray background */
+            color: white; /* White text */
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer a {
+            color: #ff6600; /* Orange links */
+            margin: 0 10px;
             text-decoration: none;
         }
-
-        #donation-container a:hover {
+        footer a:hover {
             text-decoration: underline;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icon {
+            font-size: 24px;
+            color: white;
+            margin: 0 10px;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            #thank-you {
+                width: 90%;
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="message-container">
-        <img src="paybill  eTNEST.jpg" alt="Example Image" />
-        <p>Sharing is caring!</p>
-    </div>
+    <!-- Header Section -->
+    <header>
+        <h1>Maishmaxx Foundation Feeding Programme</h1>
+        <nav>
+            <a href="#thank-you">Thank You</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
 
-    <div id="donation-container">
-        <h2>Donate Anything You Feel Like</h2>
-        <p>Your generosity can make a difference. If you'd like to contribute, please call:</p>
-        <p><strong>Ernest Maish at <a href="tel:0720019381">0720019381</a></strong></p>
-        <p>Thank you for your kindness and support!</p>
-    </div>
+    <!-- Thank You Section -->
+    <section id="thank-you">
+        <h2>Thank You!</h2>
+        <p>We are incredibly grateful for your generous donation. Your support helps us to continue our mission of supporting orphans and the less privileged.</p>
+        <p>Your contribution makes a significant impact and reassures us that we are not alone in this journey. Together, we can make a difference.</p>
+        <img src="paybill  eTNEST.jpg" alt="Paybill Information">
+        <div id="paybill-info">
+            <p><strong>PAYBILL NO:</strong> 247247</p>
+            <p><strong>EQUITY TILL NO/ACCOUNT NO:</strong> 0040191707430</p>
+            <p><strong>ACCOUNT NAME:</strong> ERNEST MAINA</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Maishmaxx Foundation. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ernest.maina.9" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook social-icon"></i>
+            </a>
+            <a href="https://www.youtube.com/@MaishmaxxProduction50" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube social-icon"></i>
+            </a>
+            <a href="https://chat.whatsapp.com/CtFLDblFqtSE6nmEDBan9E" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp social-icon"></i>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>

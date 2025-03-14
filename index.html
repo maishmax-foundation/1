@@ -5,27 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maishmaxx Foundation Feeding Programme</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Styles */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #ffffff; /* White background */
             margin: 0;
             padding: 0;
             text-align: center;
+            color: #333; /* Dark text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #ff6600; /* Orange background */
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        nav a {
+            color: white; /* White text */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Header Styles */
         .banner {
-            background-color: #4f42fc;
+            background-color: #ff6600; /* Orange background */
             padding: 20px;
-            color: white;
+            color: white; /* White text */
+            position: relative;
+            width: 100%;
+            text-align: center;
         }
-         .countdown-card {
-            background-color: #ffbb00;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icon {
+            font-size: 40px; /* Increase icon size */
+            color: black; /* Change icon color to black */
+            margin: 0 15px;
+        }
+        /* Countdown Card Styles */
+        .countdown-card {
+            background-color: #000000; /* Black background */
             padding: 20px;
             margin: 20px auto;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             width: 300px;
             transition: transform 0.3s ease-in-out;
+            color: #ff6600; /* Orange text */
         }
         .countdown-card:hover {
             transform: scale(1.05);
@@ -36,38 +74,140 @@
             gap: 15px;
         }
         .time-box {
-            background: #f8f9fa;
+            background: #ff6600; /* Orange background */
             padding: 10px;
             border-radius: 8px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 60px;
+            color: white; /* White text */
         }
         .time-box span {
             display: block;
             font-size: 1.5rem;
             font-weight: bold;
-            color: #333;
+        }
+        /* About Section Styles */
+        #about {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+        }
+        #about h2 {
+            color: #ff6600; /* Orange text */
+        }
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        /* Gallery Section Styles */
+        #gallery {
+            background-color: #ffffff; /* White background */
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+        }
+        #gallery h2 {
+            color: #ff6600; /* Orange text */
+        }
+        #gallery p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        /* Testimonials Section Styles */
+        #testimonials {
+            background-color: #f8f9fa; /* Light gray background */
+            padding: 40px 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+        }
+        #testimonials h2 {
+            color: #ff6600; /* Orange text */
+        }
+        #testimonials blockquote {
+            background: #ffffff;
+            border-left: 5px solid #ff6600;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-style: italic;
+        }
+        #testimonials footer {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #343a40; /* Dark gray background */
+            color: white; /* White text */
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        footer a {
+            color: #ff6600; /* Orange links */
+        }
+        .cta-btn {
+            background-color: #000000; /* Black button */
+            color: white; /* White text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px #ff6600; /* Bright shadow */
+        }
+        .cta-btn:hover {
+            background-color: #333333; /* Darker black on hover */
+            box-shadow: 0 0 20px #ff6600; /* Brighter shadow on hover */
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .banner {
+                padding: 10px;
+            }
+            .countdown-card {
+                width: 90%;
+            }
+            #about, #gallery, #testimonials {
+                width: 90%;
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <!-- Header Section -->
     <header>
         <div class="banner">
             <h1>Maishmaxx Foundation Feeding Programme</h1>
             <p>Spreading joy and care to the vulnerable</p>
-            <a href="#get-involved" class="cta-btn">Get Involved</a>
+            <a href="donate.html" class="cta-btn">Get Involved</a>
         </div>
         <div class="social-icons">
             <a href="https://www.facebook.com/ernest.maina.9" target="_blank" aria-label="Facebook">
-                <img src="communication.png" alt="Facebook" class="social-icon">
+                <i class="fab fa-facebook social-icon"></i>
             </a>
             <a href="https://www.youtube.com/@MaishmaxxProduction50" target="_blank" aria-label="YouTube">
-                <img src="youtube.png" alt="YouTube" class="social-icon">
+                <i class="fab fa-youtube social-icon"></i>
             </a>
             <a href="https://chat.whatsapp.com/CtFLDblFqtSE6nmEDBan9E" target="_blank" aria-label="WhatsApp">
-                <img src="whatsapp.png" alt="WhatsApp" class="social-icon">
+                <i class="fab fa-whatsapp social-icon"></i>
             </a>
         </div>
     </header>
@@ -99,26 +239,35 @@
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>The Maishmaxx Foundation is committed to supporting orphans and the less 
-                privileged, ensuring everyone feels loved and cared for.</p>
-        </div>
+        <h2>About Us</h2>
+        <p>The Maishmaxx Foundation is committed to supporting orphans and the less privileged, ensuring everyone feels loved and cared for.</p>
     </section>
 
-    <!-- Other Sections -->
+    <!-- Gallery Section -->
     <section id="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <p>Take a look at some highlights from our previous visits and activities!</p>
-            <a href="gallery.html" class="cta-btn">View Our Gallery</a>
-        </div>
+        <h2>Gallery</h2>
+        <p>Take a look at some highlights from our previous visits and activities!</p>
+        <a href="gallery.html" class="cta-btn">View Our Gallery</a>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Read what people are saying about our work!</p>
+        <blockquote>
+            <p>"The Maishmaxx Foundation has changed my life. I am so grateful for their support."</p>
+            <footer>- John Doe</footer>
+        </blockquote>
+        <blockquote>
+            <p>"Thanks to the foundation, I have hope for a better future."</p>
+            <footer>- Jane Smith</footer>
+        </blockquote>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <p>© 2024 Maishmaxx Foundation. All Rights Reserved.</p>
-        <p>Follow us on <a href="https://www.facebook.com/ernest.maina.9">Facebook</a> | <a href="https://www.youtube.com/@MaishmaxxProduction50">Youtube</a> 
+        <p>Follow us on <a href="https://www.facebook.com/ernest.maina.9">Facebook</a> | <a href="https://www.youtube.com/@MaishmaxxProduction50">Youtube</a></p>
     </footer>
 
     <script>
@@ -141,7 +290,7 @@
 
             if (timeLeft < 0) {
                 clearInterval(timer);
-                document.querySelector(".countdown").innerHTML = "<h2>It's Easter!</h2>";
+                document.querySelector(".countdown-card").innerHTML = "<h2>It's Easter!</h2>";
             }
         }
 
